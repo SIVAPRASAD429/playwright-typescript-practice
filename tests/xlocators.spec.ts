@@ -1,4 +1,3 @@
-/*
 import {test, expect, Locator} from '@playwright/test'
 test('xpaths practice',async ({page}) =>{
 await page.goto("https://demowebshop.tricentis.com/");
@@ -21,7 +20,7 @@ let ProductTitles: String[]=await product.allTextContents();
 for(let productTitle of ProductTitles){
     console.log(productTitle);
 }
-/*
+
 //Xpath with Startwith method
 
 const buildingproduct:Locator = page.locator("//h2/a[starts-with(@href,'/build')]");
@@ -34,10 +33,10 @@ const reglink:Locator = page.locator("//a[text()='Register']");
 await expect(reglink).toBeVisible();
 await reglink.click()
 
-*/
+
 
 //Xpath with last() method
-/*
+
 const lastitem:Locator = page.locator("//div[@class='column follow-us']//li[last()]")
 await expect(lastitem).toBeVisible();
 console.log('Last item name',await lastitem.textContent());
@@ -47,4 +46,3 @@ const position:Locator = page.locator("//div[@class='column follow-us']//li[posi
 await expect(position).toBeVisible();
 console.log('item name based on position',await position.textContent());
 })
-*/

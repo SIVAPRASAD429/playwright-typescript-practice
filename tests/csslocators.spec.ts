@@ -2,6 +2,10 @@ import{test, expect,Locator} from "@playwright/test"
 test("CSS Locators concept",async ({page}) =>{
 await page.goto("https://demowebshop.tricentis.com/");
 // tag#id
+<<<<<<< HEAD
+=======
+
+>>>>>>> c66481b (Updated Playwright test cases)
 const searchbox:Locator=page.locator("input#small-searchterms");
 await searchbox.fill("science");
 const magnifier:Locator = page.locator("input[class='button-1 search-box-button']");
@@ -14,9 +18,14 @@ await page.waitForTimeout(7000);
 // Tag.class
 const price:Locator = page.locator("span.price-value-27");
 await expect(price).toHaveText('51.00');
+
 // Tag[attribute=value]
 const image:Locator = page.locator("img[alt$='Tricentis Demo Web Shop']");
 await expect(image).toBeVisible();
+<<<<<<< HEAD
+=======
+
+>>>>>>> c66481b (Updated Playwright test cases)
 //tag.class[attribute=value]
 const search:Locator = page.locator("input.search-box-text[id='small-searchterms']");
 await expect(search).toBeEditable();

@@ -33,7 +33,10 @@ const reglink:Locator = page.locator("//a[text()='Register']");
 await expect(reglink).toBeVisible();
 await reglink.click()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c66481b (Updated Playwright test cases)
 
 //Xpath with last() method
 

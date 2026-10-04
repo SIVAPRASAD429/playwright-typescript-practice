@@ -17,4 +17,8 @@ await page.pause();
 const Documentcenter:Locator = page.getByRole('generic',{name: 'LDocument Center'})
 await expect(Documentcenter).toBeVisible()
 await Documentcenter.click()
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> c66481b (Updated Playwright test cases)

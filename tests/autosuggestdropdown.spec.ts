@@ -1,4 +1,4 @@
-import{test, expect, Locator, } from '@playwright/test'
+import{test, expect, Locator} from '@playwright/test'
 test('Verify Autosuggest dropdowns working', async({page})=>{
 await page.goto("https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=815461303151&hvpos=&hvnetw=g&hvrand=2689350797514010878&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9184631&hvtargid=kwd-10573980&hydadcr=14453_2462831&mcid=4c22dcdee2bf3a71b0b832c5c4ba9c17&hvocijid=2689350797514010878--&hvexpln=nav&gad_source=1");
 

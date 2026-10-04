@@ -21,13 +21,13 @@ expect(inputphone).toBe('9100125688');
 expect(page.locator("#textarea")).toBeVisible();
 await page.locator("#textarea").fill('hyderabad 500008');
 await page.waitForTimeout(1000);
+
 //to get attribute value of element
 
 const maxlength:string | null= await page.locator("input#phone").getAttribute("maxlength");
 console.log(maxlength);
 }
 )
-
 
 test('Radiobutton', async({page})=>{
 await page.goto("https://testautomationpractice.blogspot.com/");
@@ -41,10 +41,7 @@ await radiomale.check();
 expect(await radiomale.isChecked()).toBe(true);
 expect(radiomale).toBeChecked();
 }
-)   
-
-
-
+)
 
 test.only ('Checkbox', async({page})=>{
 await page.goto("https://testautomationpractice.blogspot.com/");
@@ -70,7 +67,7 @@ await page.waitForTimeout(4000);
 
 const days:string[] = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 const checkboxes:Locator[] = days.map(index => page.getByLabel(index));
-expect(checkboxes.length).toBe(7);/*
+expect(checkboxes.length).toBe(7);
 for(const checkbox of checkboxes){
     await checkbox.check();
     await expect(checkbox).toBeChecked();
@@ -83,7 +80,7 @@ for(const checkbox of checkboxes.slice(-3)){
     await expect(checkbox).not.toBeChecked();
 }
 await page.waitForTimeout(4000);
-*/
+
 
 //toggle checkboxes if its checked uncheck or if it is unchecked check.
 
@@ -108,9 +105,5 @@ for(const i of indexes){
    await checkboxes[i].check();
     await expect(checkboxes[i]).toBeChecked();
 }
-
-//Select Checkbox based on lable value
-
-
 }
 )
